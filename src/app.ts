@@ -18,7 +18,9 @@ app.use(cors());
 
 app.use("/plants", PlantsRouter);
 
-app.listen("5100", () => {
+const PORT = 5100 || "backforgoldgarden-production.up.railway.app";
+
+app.listen(PORT, () => {
   mongoose.connect(
     "mongodb+srv://Yevhen:Yevhen@cluster0.ct2xzoh.mongodb.net/?retryWrites=true&w=majority"
   );
