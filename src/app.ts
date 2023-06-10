@@ -22,7 +22,7 @@ app.get("/plants", (req, res) => {
   res.send("Hello");
 });
 
-const PORT = 5100 || "backforgoldgarden-production.up.railway.app";
+const PORT = 5100 || process.env.PORT;
 
 app.listen(PORT, () => {
   mongoose.connect(
