@@ -11,7 +11,8 @@ app.use(body_parser_1.default.json({ limit: "10mb" }));
 app.use(body_parser_1.default.urlencoded({ extended: true, limit: "10mb" }));
 app.use((0, cors_1.default)());
 app.use("/plants", plantsRouter_1.PlantsRouter);
-app.listen("5100", () => {
+const PORT = 5100 || "backforgoldgarden-production.up.railway.app";
+app.listen(PORT, () => {
     mongoose_1.default.connect("mongodb+srv://Yevhen:Yevhen@cluster0.ct2xzoh.mongodb.net/?retryWrites=true&w=majority");
     console.log("server started!!!");
 });
