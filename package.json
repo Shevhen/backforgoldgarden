@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "./dist/app.js",
-  "scripts": "node main",
+  "scripts": {
+    "start": "node dist/app.js"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
