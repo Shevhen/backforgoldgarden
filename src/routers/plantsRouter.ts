@@ -3,7 +3,7 @@ import multer, { memoryStorage } from "multer";
 
 import { plantsController } from "../controllers/plantsController";
 import { s3BuketController } from "../controllers/s3BuketController";
-import { megaController } from "../controllers/megaController";
+// import { megaController } from "../controllers/megaController";
 // import * as path from "path";
 
 const router = Router();
